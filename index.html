@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Конспект по матану</title>
+    <link rel="stylesheet" href="katex.min.css">
+    <script src="katex.min.js"></script>
+    <script src="auto-render.min.js"></script>
+    <script>
+        /* jslint evil: true */
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+</head>
+
+<body>
+    Вот тут конспект идет
+    $$
+        f=y(x)
+        \lim_{x\to0}{x^2\cdot a + b}
+    $$
+    <script>
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+            ]
+        });
+    </script>
+</body>
+
+</html>
